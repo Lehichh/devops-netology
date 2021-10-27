@@ -1,0 +1,11 @@
+**/.terraform/*
+
+programm/**/*.txt
+
+*.jpeg
+
+!logo.jpeg
+
+test/
+
+programm/*.php
