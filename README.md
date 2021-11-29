@@ -1,7 +1,7 @@
 # devops-netology
 **Sarkisyan Aleksey**
 
-**Выполнение задания 3.5 FS**
+**Выполнение задания 3.4 OS**
 
 **1.**
 
