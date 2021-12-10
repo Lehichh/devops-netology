@@ -11,6 +11,12 @@ https://yapx.ru/v/PdTLR
 
 **2.**
 
+**sudo modprobe -v dummy**
+
+**sudo ip link add dummy0 type dummy**
+
+**sudo ip addr add 192.168.1.150/24 dev dummy0**
+
 **root@vagrant:~# ip route add 8.0.0.0/8 via 10.0.2.2**
 
 **root@vagrant:~# ip route add 8.8.0.0/16 via 10.0.2.2**
