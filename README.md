@@ -1,53 +1,70 @@
 # devops-netology
 **Sarkisyan Aleksey**
 
-**Выполнение задания 3.8 Network**
+**Выполнение задания 3.9 Security**
 
 
 **1.**
 
-https://yapx.ru/v/PdTLR
+https://yapx.ru/v/PgNKM
 
 
 **2.**
 
-**sudo modprobe -v dummy**
-
-**sudo ip link add dummy0 type dummy**
-
-**sudo ip addr add 192.168.1.150/24 dev dummy0**
-
-**root@vagrant:~# ip route add 8.0.0.0/8 via 10.0.2.2**
-
-**root@vagrant:~# ip route add 8.8.0.0/16 via 10.0.2.2**
-
-**root@vagrant:~# ip route**
-
-**default via 10.0.2.2 dev eth0 proto dhcp src 10.0.2.15 metric 100**
-
-**8.0.0.0/8 via 10.0.2.2 dev eth0**
-
-**8.8.0.0/16 via 10.0.2.2 dev eth0**
-
-**10.0.2.0/24 dev eth0 proto kernel scope link src 10.0.2.15**
-
-**10.0.2.2 dev eth0 proto dhcp scope link src 10.0.2.15 metric 100**
+https://yapx.ru/v/PgNLU
 
 
 **3.**
 
-https://yapx.ru/v/Pd2j2
+https://yapx.ru/v/PgNNX
 
-например служба **sshd** принимающая запросы на соединения работает по протоколу **tcp** на **22** порту
+на время теста в файле hosts Windows добавил строку, чтобы попадать по ссылке netology.ru на страницу Апач по умолчанию.
+
+**192.168.1.56		netology.ru**
+
+в файле **default-ssl.conf** указал свой сертификат
+
+**SSLCertificateFile      /home/vagrant/netology.ru/netology.ru.crt**
+
+**SSLCertificateKeyFile /home/vagrant/netology.ru/netology.ru.key**
+
+после добавил сертификат в Windows в корневые доверенные.
 
 
 **4.**
 
-https://yapx.ru/v/Pd2nR
+Команда
 
-служба **rpcbind** порт **111**, отображает службы RPC на порты
+**./testssl.sh -U --sneaky https://netology.ru**
+
+https://yapx.ru/v/Pge8g
 
 
 **5.**
 
-https://yapx.ru/v/Pd7wS
+https://yapx.ru/v/PgvgN
+
+https://yapx.ru/v/Pg18V
+
+
+**6**
+
+https://yapx.ru/v/PiaBB
+
+**config файл**
+
+**Host netology**
+
+   **HostName 192.168.1.57**
+   
+   **IdentityFile ~/.ssh/renamekey**
+   
+   **User vagrant**
+   
+**7**
+
+**sudo tcpdump -w data.pcap -i eth0**
+
+https://yapx.ru/v/PiqDT
+   
+
