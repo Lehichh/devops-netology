@@ -6,17 +6,17 @@
 
 **1.**
 
-https://yapx.ru/v/PgNKM
+![Задание 1](/dz3.9/1.png)
 
 
 **2.**
 
-https://yapx.ru/v/PgNLU
+![Задание 2](/dz3.9/2.png)
 
 
 **3.**
 
-https://yapx.ru/v/PgNNX
+![Задание 3](/dz3.9/3.png)
 
 на время теста в файле hosts Windows добавил строку, чтобы попадать по ссылке netology.ru на страницу Апач по умолчанию.
 
@@ -37,14 +37,14 @@ https://yapx.ru/v/PgNNX
 
 **./testssl.sh -U --sneaky https://netology.ru**
 
-https://yapx.ru/v/Pge8g
+![Задание 4](/dz3.9/4.png)
 
 
 **5.**
 
-https://yapx.ru/v/PgvgN
+![Задание 5](/dz3.9/5.png)
 
-https://yapx.ru/v/Pg18V
+![Задание 5](/dz3.9/5_1.png)
 
 
 **6**
@@ -65,6 +65,6 @@ https://yapx.ru/v/Pg18V
 
 **sudo tcpdump -w data.pcap -i eth0**
 
-https://yapx.ru/v/PiqDT
+![Задание 7](/dz3.9/7.png)
    
 
