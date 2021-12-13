@@ -49,7 +49,7 @@ https://yapx.ru/v/Pg18V
 
 **6**
 
-https://yapx.ru/v/PiaBB
+![Задание 6](/dz3.9/6.png)
 
 **config файл**
 
