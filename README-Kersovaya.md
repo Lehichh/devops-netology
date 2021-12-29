@@ -573,9 +573,9 @@ Dec 29 16:50:24 vagrant systemd[1]: Started A high performance web server and a 
 
 Надеюсь достаточно понятно тут показал, что отпечаток, то есть сертификат сменился на следующую минуту после запуска кроном скрипта.
 
-![Задание 9](/kursovaya/9_1.PNG)
+![Задание 9](/kursovaya/9_1.png)
 
-![Задание 9](/kursovaya/9_2.PNG)
+![Задание 9](/kursovaya/9_2.png)
 
 
 
