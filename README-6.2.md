@@ -232,3 +232,63 @@ test_db=# explain select * from clients where заказ is not null;
 Ожидаемое число строк, которое должно вывести.
 
 Средний размер строк в байтах.
+
+
+**Задание 6**
+
+Для бекапа я немного поменял файл докера из первого задания
+
+```
+version: '2.1'
+
+services:
+  postgres:
+    image: postgres:12.0
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: test_db
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+      - ./pgbackup:/var/lib/postgresql/backup
+    ports:
+      - "5432:5432"
+```
+
+**делаю бэкап и копирую его в volume**
+
+```
+vagrant@server1:~/dz6.1/test$ docker exec -u postgres test-postgres-1 pg_dump -Fc test_db >db.dump
+vagrant@server1:~/dz6.1/test$ docker cp db.dump test-postgres-1:/var/lib/postgresql/backup
+```
+
+**Останавливаю и удаляю контейнер**
+
+```
+vagrant@server1:~/dz6.1/test$ docker-compose down
+```
+
+**файл докера для нового контейнера**
+
+```
+version: '2.1'
+
+services:
+  postgres:
+    image: postgres:12.0
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: test_db
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./pgdata2:/var/lib/postgresql/data
+      - ./pgbackup:/var/lib/postgresql/backup
+    ports:
+      - "5432:5432"
+```
+
+**восстановление бд**
+
+```
+vagrant@server1:~/dz6.1/test$ docker exec -i -u postgres test-postgres-1 pg_restore -d test_db < pgbackup/db.dump
+```
