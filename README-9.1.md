@@ -15,6 +15,11 @@
 
 ![Задание 2](/dz9.1/2.PNG)
 
-**[bug](/dz9.1/Bug.xml)** **[errors](/dz9.1/errors.xml) **
+
+**XML файлы**
+
+[bug](/dz9.1/Bug.xml)
+
+[errors](/dz9.1/errors.xml)
 
 
